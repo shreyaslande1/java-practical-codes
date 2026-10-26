@@ -1,0 +1,6 @@
+/**
+ * InsufficientBalanceException
+ */
+public class InsufficientBalanceException {
+
+}

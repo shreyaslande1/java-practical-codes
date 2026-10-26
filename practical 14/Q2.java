@@ -1,10 +1,27 @@
+
+class InsufficientBalanceException extends Exception{
+    InsufficientBalanceException(String message){
+        super(message);
+    }
+}
+class Bank{
+    double balance = 50000;
+    void withdraw(double amount) throws InsufficientBalanceException{
+        if(amount > balance){
+            throw new InsufficientBalanceException("Insufficient Balance");
+        } else {
+            balance -= amount;
+            System.out.println("Withdrawal successful. Remaining balance: " + balance);
+        }
+    }
+}
 class Q2{
     public static void main(String[] args) {
-        int arr[] = {1, 2, 3};
+        Bank b = new Bank();
         try {
-            System.out.println(arr[5]);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("Array Index Out of Bound Exception: Please access valid element");
+            b.withdraw(7000);
+        } catch (InsufficientBalanceException e) {
+            System.out.println(e.getMessage());
         }
     }
 }
