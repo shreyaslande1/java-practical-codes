@@ -2,6 +2,7 @@ class Student {
     int rollno;
     String name;
     String branch;
+    float percentage;
 
     public Student(int rollno, String name) {
         this.rollno = rollno;
@@ -13,7 +14,7 @@ class Student {
     }
 
     public void input2(float p) {
-        // percentage = p;
+        percentage = p;
     }
 
     public void display() {

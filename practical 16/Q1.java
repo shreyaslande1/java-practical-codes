@@ -15,3 +15,5 @@ public class Q1 extends Applet {
         g.drawString("IT", 10, 150);
     }
 }
+/*<applet code="Q1.class" width="400" height="150">
+</applet>*/

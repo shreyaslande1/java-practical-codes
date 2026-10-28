@@ -1,6 +1,6 @@
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import  java.io.FileOutputStream;
+
 public class Q3 {
     public static void main(String[] args) {
         try{

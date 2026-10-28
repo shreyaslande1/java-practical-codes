@@ -2,9 +2,6 @@ import java.util.Scanner;
 
 class Num extends Thread {
     public void run() {
-        try {
-            Thread.sleep(1000);
-        } catch (Exception e) {}
         for (int i = 1; i <= 50; i++) {
             System.out.println(i);
         }
@@ -42,10 +39,7 @@ public class Q2 {
         ODD o = new ODD();
         Even e = new Even();
 
-        n.setPriority(1);
-        o.setPriority(5);
-        e.setPriority(10);
-
+        
         n.start();
         o.start();
         e.start();

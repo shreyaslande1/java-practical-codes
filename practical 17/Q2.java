@@ -2,7 +2,7 @@ import java.applet.Applet;
 import java.awt.*;
 
 /* 
-<applet code="Home.class" width="500" height="400">
+<applet code="Q2.class" width="500" height="400">
 </applet> 
 */
 

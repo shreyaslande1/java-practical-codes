@@ -1,4 +1,4 @@
-package MathOperations;
+package MathOperation;
 
 public class MathUtil {
     public int add(int a, int b) {

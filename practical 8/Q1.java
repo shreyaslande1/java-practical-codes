@@ -65,11 +65,6 @@ public class Q1 {
         Multiplication m = new Multiplication(a, b);
         Div d = new Div(a, b);
 
-        a1.setPriority(5);
-        s.setPriority(3);
-        m.setPriority(2);
-        d.setPriority(10);
-
         a1.start();
         s.start();
         m.start();

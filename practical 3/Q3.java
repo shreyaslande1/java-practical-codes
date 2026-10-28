@@ -1,7 +1,7 @@
 class store {
     static String storename;
     int itemprice;
-    int amount = 0;
+    static int amount = 0;
 
     public static void sname(String s) {
         storename = s;
@@ -9,7 +9,12 @@ class store {
 
     public void sale(float itemprice) {
         this.itemprice = (int) itemprice;
+        amount+=itemprice;
+    }
+    
+    public void display() {
         System.out.println("Storename = " + storename + " Item price = " + itemprice + " Amount = " + amount);
+        
     }
 }
 
